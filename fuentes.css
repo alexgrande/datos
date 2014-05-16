@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face
+{
+	font-family:"Digital";
+	src:url(fonts/dited_regular_macroman/Dited-webfont.ttf), url(fonts/dited_regular_macroman/Dited-webfont.eot), url(fonts/dited_regular_macroman/Dited-webfont.woff);
+}
+body
+{
+	font-family:Arial, Helvetica, sans-serif;/* Windows, Mac, Linux correspondencias de fuentes parecidas en cada so*/
+	background-image: url(img/textura.jpg) ; /* para cargar una textura de fondo*/
+	background-repeat:repeat;/*repetir en x en y o no repeat*/
+	background-position: left top;
+	color:#FFF;
+	background-size:10% 10%; /* pilla toda la pantalla */
+	background-color:#000;
+
+}
+
+.parrafo-prueba
+{
+	font-weight:bolder;
+	font-size:50px;
+}
+.parrafo-dos
+{
+	font-family:"Digital";
+	font-size:40px;
+	/*font-variant:small-caps; mayusculas */
+	font-style:italic;
+}
+.parrafo-tres
+{
+	font-size:30px;
+	/*font-variant:small-caps; mayusculas */
+	font-style:oblique;
+}
+/* font face fuentes descargadas de Internet */
+
+
+.parrafo-personalizado
+{
+	/*font-family:"Digital";*/
+	font-family: 'Pacifico', cursive;
+	font-size:50px;
+
+}

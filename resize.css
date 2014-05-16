@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+.tamaño
+{
+	height:30px;
+	width:30px;
+	overflow:hidden;/* escondemos todo lo que se salga de tamaño*/
+	resize:both; /* ajustar el parrafo */
+	border:solid;
+}

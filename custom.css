@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1, h2
+{
+	color:#000;
+	font-family: "Pacifico", cursive;
+    font-size: 50px;
+
+
+}
+p
+{
+	color:#F3C;
+
+}
+.instructor
+{
+	color:#006;
+}
+.subtitulo
+{
+	color:#666;
+}
+#piePagina
+{
+	color:#F60;
+
+}
+
+a
+{
+	color:#F00;
+	text-decoration:none;
+
+}
+a:link /*NO SE HA VISITADO*/
+{
+	color:#03F;
+
+}
+a:visited /* VISITADO*/
+{
+	color:#FCF;
+
+}
+a:hover
+{
+	background-color:#0F0;
+}
+input:focus
+{
+	border-color:#F00;
+	background-color:#000;
+}
+input:hover
+{
+	background-color:#F00;
+
+}
+
+ul li
+{
+	font-size:25px;
+	list-style-type:none;
+	font-weight:bold;
+	color:#069;
+	font-family:Verdana, Geneva, sans-serif;
+
+
+}
+p::first-letter
+{
+	font-size:100px;
+	font-weight:bold;
+	color:#F00;
+}
+p::first-line
+{
+	font-size:30px;
+	font-weight:bold;
+	text-decoration:underline;
+	color:#F00;
+}
+
+/*ul li::before
+{
+	content:url(arrow.png)
+}*/
+
+/*ul li::after
+{
+	content:url(arrow.png)
+}*/
+
+
+ul li:first-child /* pilla la primera linea*/
+{
+	background-color:#9F0;
+
+}
+ul li:last-child /* pilla la ultima linea*/
+{
+	background-color:#603;
+}
+ul li:nth-child(2) /* pilla la linea que le digamos*/
+{
+	background-color:#F09;
+}
+.tamaño
+{
+	height:200px;
+	width:50%; /* se adapta al ancho de la pantalla */
+	background-color:#000;
+	border:solid;
+}
+.prueba
+{
+	height:100px;
+	width:100px;
+	background-color:#000;
+	transform:rotate(20deg);
+	-webkit-transform:rotate(20deg);
+	-moz-transform:rotate(20deg);
+	-o-transform:rotate(20deg);
+}
+
