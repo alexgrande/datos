@@ -5,11 +5,24 @@
 
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"> </script>
         <script>
+
+            var seleccion;
+
             $(document).on('ready',function(){
 
+                seleccion = $('.ejem1');
 
+                if(seleccion.length)
+                    console.log("Existen: " + seleccion.length);
+                else
+                    console.log("No existe el elemento seleccionado");
 
+                // seleccion.not('.cl1').text("Este elemento no tiene la clase cl1")
 
+                //  seleccion.has("p").text("Este elemento tiene un <p> en su codigo");
+
+                $('li').first().html("<strong>Soy el elemento 1</strong>");
+                $('li').eq(3).text("Soy el elemento numero 4"); //para seleccionar el elemento N igual que los arreglos empiezan por 0
             });
 
 
@@ -17,6 +30,20 @@
         </script>
     </head>
     <body>
+        <div class="ejem1 cl1">
+            <p></p>
+        </div>
+
+        <div class="ejem1">
+            <span></span>
+        </div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
 
 
 

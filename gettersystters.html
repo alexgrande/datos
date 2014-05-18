@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"> </script>
+        <script>
+            $(document).on('ready',function(){
+                //Este metodo sirve para obtener el id
+                var clase = $("#prueba").attr("id");
+                              alert(clase);
+                //Este metodo asigna un valor
+                $("#prueba").attr("class","ejemplo");
+
+
+            });
+
+
+
+        </script>
+    </head>
+    <body>
+
+        <p id="parrafo"><strong>Hola Jquery</strong></p>
+        <div id="prueba"></div>
+
+    </body>
+</html>
