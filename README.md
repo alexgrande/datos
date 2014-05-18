@@ -1,4 +1,4 @@
 main
 ====
 
-Pruebas JS
+Practicas servidor local
