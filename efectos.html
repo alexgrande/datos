@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"> </script>
+        <script>
+
+
+
+            $(document).on('ready',function(){   //evento documento listo
+
+                var elem = $('#caja1');
+                $("#btn1").click(function(){
+                    //mostrar elemento
+                    //elem.show();
+                    //elem.slideDown();
+                    //elem.fadeIn('slow');
+                     elem.fadeIn(5000);
+
+
+                })
+
+                 $("#btn2").click(function(){
+                     //ocultar elemento
+                    // elem.hide();
+                     // elem.slideUp();
+                     elem.fadeOut('fast');
+                     //elem.slideToggle();
+
+                })
+
+            })
+
+
+        </script>
+    </head>
+    <body>
+
+        <div id="caja1" style="background:red">PRUEBA</div>
+        <button id="btn1">Mostrar</button>
+        <button id="btn2">Ocultar</button>
+    </body>
+</html>

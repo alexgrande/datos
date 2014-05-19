@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"> </script>
+        <script>
+
+
+
+            $(document).on('ready',function(){   //evento documento listo
+
+                $('#caja1').one('mouseover',function(){ //metodo one solo cambia 1 vez no hace falta off
+
+                    caja1bg = $(this).css('background');
+                    $(this).css('background','red');
+                })
+
+                $('#caja1').on('mouseout',function(){
+                    $(this).css('background',caja1bg);
+                })
+
+                //*/////////////////////////////////////////////////////////////////
+
+
+                /*
+             $(document).on('ready',function(){   //evento documento listo
+
+                $('#caja1').on('mouseover',function(){
+
+                    caja1bg = $(this).css('background');
+                    $(this).css('background','red');
+                })
+
+                 $('#caja1').on('mouseout',function(){
+                   $(this).css('background',caja1bg);
+                })
+                 */
+
+
+
+                //////////////// //////////////////////////////////////////////////////
+                /*
+                $('#caja1').mouseover(function(){
+
+                    caja1bg = $(this).css('background');
+                    $(this).css('background','red');
+                })
+
+                 $('#caja1').mouseout(function(){
+                   $(this).css('background',caja1bg);
+                })
+*/
+            })
+
+        </script>
+    </head>
+    <body>
+
+        <div id="caja1" style="background:blue">CAJA</div>
+
+    </body>
+</html>

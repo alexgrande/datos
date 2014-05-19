@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"> </script>
+        <script>
+            $(document).on('ready',function(){
+                //metodo data
+                $('ul li').each(function(index,elemento){
+                 // $.data(elemento,'nombreAtributo',valor);
+                    $.data(elemento,'posicion',index);
+                });
+
+                    $('ul li').each(function(index,elemento){
+                    console.log($.data(elemento,'posicion'));
+                });
+
+
+            });
+
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+
+        </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"> </script>
+        <script>
+
+
+
+            $(document).on('ready',function(){   //evento documento listo
+
+                    $("#miInput").on('cambio',function(ev,id){
+                                if(this.checked)
+                                {
+                                    $("#miInput").removeAttr('checked');
+                                    $(".cambiar").text('Encender');
+                                }
+                                else
+                                {
+                                    $("#miInput").attr('checked','checked');
+                                    $('.cambiar').text('Apagado');
+                                }
+                    })
+
+
+                    $(".cambiar").on('click',function(){
+                                       $("#miInput").trigger('cambio',[$(this).attr('id')]);
+                                       });
+            });
+
+
+        </script>
+    </head>
+    <body>
+
+        <input type="checkbox" id="miInput" checked="checked">
+        <button class="cambiar" id="boton1">Apagar</button>
+        <button class="cambiar" id="boton2">Apagar</button>
+    </body>
+</html>
