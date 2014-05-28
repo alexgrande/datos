@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"> </script>
+        <script>
+            $(document).on('ready',function(){
+                //nucleo de jquery
+                $('button').on('click',function(){
+
+                   /* var arreglo = ['Dxvtuts','codigofacilito','Alex Grande'];
+
+                    if($.inArray('Dxvtuts',arreglo) !== -1)
+                        console.log(arreglo[$.inArray('Dxvtuts',arreglo)]);
+
+
+                    /// borrar espacios en blanco de una cadena de texto metodo trim
+                    */
+                    var s = '                hola            mun               do           ';
+                    console.log(s);
+                    console.log($.trim(s));
+
+/*                  //metodo each con arreglo para sacar el valor
+                    $.each(arreglo,function(indice,val){
+
+                        if(arreglo[indice] == 'Alex Grande')
+                            return true;
+
+                        console.log('Elemento' + indice +' vale: '+ val)
+                    })
+*/
+                })
+
+            })
+
+        </script>
+    </head>
+    <body>
+        <button id="test">Ejecutar</button>
+        <div id="e1">
+            Metodos utilitarios
+        </div>
+    </body>
+</html>

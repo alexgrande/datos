@@ -1,0 +1,341 @@
+@charset "utf-8"; /*Es importante asignar esto para que pillen acentos etc..*/
+
+/*Hoja de estilos.css de pruebascss.html*/
+body{
+    background-color: #fff;
+    width: 80%; /* con esto se fija el tamaño del body para dejar franjas blancas laterales*/
+    margin: 0 auto;/*se centra el contenido*/
+}
+h1, h2{   /*importante la diferencia entre poner coma que se suba el estilo a los dos h1 o no poniendolo que no hace nada*/
+    color: #ff0000;
+    background-color: #0000ff;
+    font-family: fantasy;
+}
+p em{
+    font-family: "times new roman";
+    font-size: 15px;
+    font-style: oblique;
+}
+p{
+    font-family: "arial";
+    font-size: 20px;
+}
+p span{
+    font-family: "helvetica";
+    font-size: 20px;
+    color:#fff;
+    background-color: purple;
+}
+#textosobrecabecera p{   /* importante acordarse de como se aplican los estilos si se pone detras o delante la marca p*/
+    border-bottom-width:10px; /* cuando se definen bordes hay que indicarle el grosor de cada lado*/
+    border-right-width: 10px;
+    border-style: solid;
+    border-color: red;
+    border-top: none;
+    border-left: none;
+    font-family: sans-serif;
+    font-size: 90px;
+    color: red;
+    background-color: black;
+    text-align: center;
+    padding: 10px 20px 10px 20px; /* Se escribe con esta notacion sin separacion de comillas*/
+
+}
+
+/*pseudoclases
+a:
+link - Enlace sin ingresar
+visited - Enlace presionado
+hover - Enlace que tiene la flecha del mouse encima
+active - Es la que tiene foco en ese momento (pruebe de tocar la tecla tab)
+*/
+/*Redimensionar un div*/
+
+#cabecera {
+    width:100%;
+    height:100px;
+    background-color:#ffee00;
+    color:#0000aa;
+    text-align:center;
+    font-family:Times New Roman;
+    font-size:50px;
+    font-weight:bold;
+}
+/********************************/
+
+
+/******CURSOR HELP Comportamientos del cursos***
+crosshair
+default
+pointer
+move
+e-resize
+ne-resize
+nw-resize
+n-resize
+se-resize
+sw-resize
+s-resize
+w-resize
+text
+wait
+help
+auto
+default
+*/
+
+a {
+    cursor:pointer;
+}
+
+/***********************************************/
+
+
+.margenes p{
+    background-color:#ffffaa;
+    margin:0px;
+}
+
+ul.vacio{
+    list-style-type:none;
+}
+ul.circulorelleno{
+    list-style-type:disc;
+}
+ul.decimal{
+    list-style-type:decimal;
+}
+ul.romanominuscula{
+    list-style-type:lower-roman;
+}
+ul.romanomayuscula{
+    list-style-type:upper-roman;
+}
+ul.circulovacio{
+    list-style-type:circle;
+}
+ul.cuadrado{
+    list-style-type:square;
+}
+ul.letrasminusculas{
+    list-style-type:lower-alpha;
+}
+ul.letrasmayusculas{
+    list-style-type:upper-alpha;
+}
+#cambiarfuente{
+    font: bold oblique 40px "times new roman";
+    background-color: red;
+}
+
+
+
+
+#mainmenu ul{
+    list-style-type: none;
+    background-color: orange;
+    color: white;
+    font: bold oblique 15px helvetica;
+    border: solid red 1px;
+
+
+
+}
+#mainmenu li{
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    display: block; /*lo convierte a modo horizontal en la misma linea todos los elementos si cambiamos display a inline*/
+
+
+}
+#mainmenu a:link, a:visited, a:hover, a:active {  /* se agrupa para no repetir texto*/
+    text-decoration: none; /* se borra el subrayado la decoracion del enlace*/
+}
+#mainmenu a:link{
+    background-color: blue;
+}
+
+#mainmenu a:visited{
+    background-color: yellow;
+}
+#mainmenu a:hover{
+    background-color: lightpink;
+
+}
+#mainmenu a:active{
+    background-color: white;
+
+}
+
+/**********************Menu horizontal**************************************/
+
+#menuhorizontal ul{
+    list-style-type: none;
+    background-color: orange;
+    color: white;
+    font: bold oblique 15px helvetica;
+    border: solid red 1px;
+    float:left;
+    width:100%;
+    padding:10px;
+    margin:2px;
+
+
+}
+#menuhorizontal li{
+    display: inline;/*esto cambia el comportamiento del menu en una sola linea*/
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    width:100px;
+    text-decoration:none;
+    color:#ff0000;
+    padding:3px 5px;
+    border-right:1px solid white;
+
+
+}
+#menuhorizontal a:link, a:visited, a:hover, a:active {  /* se agrupa para no repetir texto*/
+    text-decoration: none;                              /* se borra el subrayado la decoracion del enlace*/
+}
+#menuhorizontal a:link{
+    background-color: blue;
+}
+
+#menuhorizontal a:visited{
+    background-color: yellow;
+}
+#menuhorizontal a:hover{
+    background-color: lightpink;
+
+}
+#menuhorizontal a:active{
+    background-color: white;
+}
+
+/***************************************************************************/
+#contenedorform {
+    width:500px;
+    margin-left:20px;
+    margin-top:10px;
+    background-color:#ffe;
+    border:1px solid #CCC;
+    padding:10px 0 10px 0;
+}
+
+#contenedorform form label {
+    width:120px;
+    float:left;
+    font-family:verdana;
+    font-size:14px;
+}
+.botonsubmit {
+    color:#f00;
+    background-color:#bbb;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+
+/******************TABLAS***********************************************/
+caption
+{
+    font-family: arial;
+    font-size:15px;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    padding:10px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+th
+{
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 0.5em;
+    background-color:#6495ed;;
+}
+
+thead th
+{
+    background-color: #6495ed;
+    color: #fff;
+}
+
+tbody th
+{
+    font-family:arial;
+    font-weight: normal;
+    background-color: #6495ed;
+    color:#ff0;
+}
+
+td {
+    border: 1px solid #000;
+    padding: .5em;
+    background-color:#ed8f63;
+    width:100px;
+    text-align:center;
+}
+/******************************MOVER CAJAS     **********************************************/
+
+
+#caja1 p,#caja2,#caja3 p {
+    background-color:blue;
+    font-family:verdana;
+    width:40%;
+    font-size: 15px;
+    color:white;
+
+
+}
+
+#caja2 p {
+
+    position:relative;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 15px;
+    background-color:orange;
+    width:auto;
+    color:black;
+
+}
+/********************************************************************************************/
+
+
+#cajafija1{
+  position:absolute;
+  background-color:red;
+  left:550px;
+  top:10px;
+  width:200px;
+  height:200px;
+  z-index:2;
+}
+
+#cajafija2{
+  position:absolute;
+  background-color:green;
+  left:570px;
+  top:50px;
+  width:200px;
+  height:200px;
+  z-index:3;
+}
+
+#cajafija3{
+  position:absolute;/*si pusiesemos fixed se queda en esa posicion respecto a la ventana del navegador por loq ue se podria hacer scroll y se mantendria ahi*/
+  background-color:blue;
+  left:580px;
+  top:30px;
+  width:200px;
+  height:200px;
+  z-index:1;
+}

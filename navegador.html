@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"> </script>
+        <script>
+
+
+            $(document).on('ready',function(){
+
+                //nueva libreria modernizr.com antiguamente browser
+                //probemos
+                console.log($.browser); //no funciona con esta version de jquery
+                if($.browser.msi)
+                    alert("IE")
+                    else
+                    alert("NO IE")
+                }
+            });
+
+        </script>
+    </head>
+    <body>
+
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"> </script>
+        <script>
+
+
+            $(document).on('ready',function(){   //evento documento listo
+
+                $('a').on("click",function(e){
+                    e.preventDefault();//prevenir lo que por defecto ejecuta el evento asi no ejecuta el link
+                 //   e.pageX;// indica la posicion
+                 //   e.pageY;// indica la posicion
+                   console.log($(this).attr('id'));
+                });
+
+            });
+
+        </script>
+    </head>
+    <body>
+
+        <a href="http://#" id="evento">Hola</a>
+        <a href="http://#" id="evento2">Hola 2</a>
+    </body>
+</html>

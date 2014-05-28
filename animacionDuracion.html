@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+        <style>
+            #ejemplo{
+                text-align: center;
+               height:50px;
+               line-height:50px;
+                background-color: red;
+                font-family: arial;
+                color: white;
+                font-weight: bold;
+                width: 50%;
+            }
+        </style>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"> </script>
+        <script>
+
+
+
+            $(document).on('ready',function(){   //evento documento listo
+
+                $.fx.speeds.lento = 3000;
+                $.fx.speeds.muyRapido = 100;
+
+                $('#btn1').on('click',function(){
+                    $('#ejemplo').fadeOut('lento',function(){
+                        $('body').append('el elemento se ha ocultado');
+                       // $(this).remove(); // se elimina en vez de ocultarlo
+                        $(this).fadeIn('muyRapido');
+                    });
+
+                })
+
+                 var elem = $('#ejemplo');
+                $("#btn2").click(function(){
+                    //mostrar elemento
+                    elem.fadeIn('muyRapido');
+
+
+                })
+
+            })
+
+
+        </script>
+    </head>
+    <body>
+
+        <div id="ejemplo">VAMOS A HACER MAGIA AL PULSAR EL BOTON</div>
+        <button id="btn1">Fade Out</button>
+         <button id="btn2">Mostrar</button>
+
+    </body>
+</html>

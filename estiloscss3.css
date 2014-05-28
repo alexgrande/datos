@@ -1,0 +1,231 @@
+@charset "utf-8"; /*Es importante asignar esto para que pillen acentos etc..*/
+#recuadro1{
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color:#ddd;
+  width:200px;
+  padding:10px;
+}
+
+
+#recuadro2{
+    /*box-shadow: [desplazamiento en x] [desplazamiento en y] [desenfoque] [color] ,
+            [desplazamiento en x] [desplazamiento en y] [desenfoque] [color] etc.*/
+   box-shadow: -30px -30px 20px #f00,
+                30px  30px 20px #0f0; /*Se establece una sombra valor positivo a la derecha negativo a la izq( der o izq, arriba o abajo, mas fuerte) */
+
+
+    /*sombras interiores
+   box-shadow: inset 0px 0px 40px #f00,
+                    0px 0px 40px #ff0;
+
+    */
+
+    /*
+    Transparencia
+    box-shadow: 30px 30px 30px rgba(255,0,0,0.5);
+
+
+
+    */
+
+  border-top-right-radius: 40px;
+  background-color:#aa0;
+  width:200px;
+  padding:10px;
+  margin-top:50px;
+
+}
+
+
+/*fin recuadro 2*/
+
+/* Sombreado de texto
+Elemento {
+     text-shadow: desplazamientoX desplazamientoY radio-de-desenfoque color;
+}
+*/
+#titulo1 {
+  text-shadow: 5px 5px 5px #aaa;
+}
+
+#titulo2 {
+  text-shadow: -5px -5px 5px #aaa;
+}
+
+#titulo3 {
+  text-shadow: 3px 3px 5px #f00,
+               6px 6px 5px #0f0,
+               9px 9px 5px #00f;
+}
+
+
+h1 {
+  font-size:50px;
+}
+
+
+body {
+  background:white;
+  margin:50px;
+}
+
+/*rotaciones 2D*/
+#recuadro1d{
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 20px;
+  background-color:#ddd;
+  width:200px;
+  padding:10px;
+}
+
+
+#recuadro2d{
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-radius: 20px;
+  background-color:#ddd;
+  width:200px;
+  padding:10px;
+}
+
+.mostrarme{
+    display: none;
+    background-image: url("foto1.jpg");
+    opacity: 1;/*hace la imagen mas opaca con valores desde 0.1 a 1*/
+}
+
+.desplegar:hover .mostrarme{
+
+    display : block;
+    background-color: red;
+    text-decoration: none;
+    width: 150px;
+    height: 100px;
+    font-family: arial;
+    text-align: center;
+    font-size: 15px;
+}
+.desplegar a{
+    text-decoration: none;
+    text-align: center;
+    font-family: arial;
+
+}
+.desplegar a:link{
+    background-color: blue;
+
+}
+.desplegar a:hover{
+    background-color: red;
+
+}
+.desplegar a:active{
+    background-color: orange;
+
+}
+.desplegar a:visited{
+    background-color: yellow;
+    color:green;
+
+}
+
+/*transformaciones 2d escalado*/
+/*
+Elemento {
+     transform: scale(2 ,0.5);
+}
+
+*/
+/*columnas en css 3*/
+#recuadro1columna{
+  -moz-column-count:4;
+  -webkit-column-count:4;
+  column-count:4;
+  border-radius: 20px;
+  background-color:#ddd;
+  width:600px;
+  padding:10px;
+}
+
+/*transformar un recuadro*/
+#recuadro1trans{
+  border-radius: 20px;
+  background-color:#ddd;
+  width:200px;
+  padding:10px;
+ transition:width 1s,
+         background-color 8s;
+-moz-transition:width 1s,
+             background-color 8s;
+-ms-transition:width 1s,
+             background-color 8s;
+-webkit-transition:width 1s,
+                 background-color 8s;
+-o-transition:width 1s,
+            background-color 8s;
+
+}
+
+#recuadro1trans:hover{
+  width:300px;
+  background-color: #f00;
+}
+
+#recuadro2trans{
+  border-radius: 20px;
+  background-color:#ff0;
+  width:200px;
+  padding:10px;
+   transition:width 1s,
+             background-color 8s;
+  -moz-transition:width 1s,
+                 background-color 8s;
+  -ms-transition:width 1s,
+                 background-color 8s;
+  -webkit-transition:width 1s,
+                     background-color 8s;
+  -o-transition:width 1s,
+                background-color 8s;
+}
+
+#recuadro2trans:hover{
+  width:300px;
+ background-color: #f00;
+}
+
+
+
+.pic {
+    width:400px;
+    height:217px;
+    background: url(http://www.corelangs.com/css/box/img/tiger.png) no-repeat;
+}
+.text {
+
+    width:400px;
+    height:217px;
+    background:orange;
+    opacity:0;
+}
+.pic:hover .text {
+    opacity:0.8;
+    text-align:center;
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+    font-family:arial;
+
+
+
+}
+
+
+
