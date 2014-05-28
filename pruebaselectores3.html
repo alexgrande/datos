@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+        <script src="/datos/jquery/jquery-1.8.3.min.js"> </script>
+        <script>
+            $(document).on('ready',function(){
+
+                // $('#prueba').text('pasando cadena de texto a un id');
+                $('.prueba').html('<strong>Hola mundo</strong>');
+                //    $('li').html('<a href://www.cybermatica.com>Enlace a web de tecnologia Ibicenca</a>');
+                $('.color').html('<strong>Happy</strong>');
+                $('article').html('<strong>Esto es el footer</strong>');
+                $('.footer').html('<em>Copyright by Cybermatica.com 2014</em>');
+
+                //Este metodo asigna un valor
+                $("#prueba").attr("id","ejemplo");
+
+                //pasamos texto al nuevo id #ejemplo
+                $("#ejemplo").html("<strong>Este es el texto que se le pasa a ejemplo</strong>");
+
+
+                //almacenamos el id en una clase
+                var clase = $(".color").attr("class");
+                //            alert(clase);
+
+                //llamamos al contenido de una lista
+                var edad = 19
+                if(edad > 18)
+                {
+                    console.log("Eres mayor de 18");
+                }
+
+
+
+                $('li').eq(2).text("soy el numero 3");
+                $('li').eq(1).html("<marquee>Yo soy el numero 2</marquee>");
+                $('li').first().html("<strong>Soy el elemento 1</strong>");
+                $('li').eq(3).text("Soy el elemento numero 4"); //para seleccionar el elemento N igual que los arreglos empiezan por 0
+
+
+            })
+
+
+
+
+
+
+        </script>
+    </head>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>INICIO</li>
+                <li>SERVICIOS</li>
+                <li>PORTFOLIO</li>
+                <li>CONTACTO</li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+
+        <div id='prueba'></div>
+        <article><p> <span class="prueba"></span></p></article>
+
+        <div class="color">Prueba de color</div>
+        <article><span> <div class="color">Prueba de color</div></span></article>
+        <p id="parrafo"><strong>Hola Jquery</strong></p>
+
+        <ul class="este">
+            <li>primer</li>
+            <li>segundo</li>
+            <li>tercero</li>
+            <li>cuarto</li>
+            <li>quinto</li>
+        </ul>
+
+
+
+    </body>
+    <footer>
+        <p class=footer></p>
+    </footer>
+</html>
